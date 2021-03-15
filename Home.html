@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Home.css">
+  
+</head>
+
+<body>
+  <header class=" header">
+    <p>Student Enrollment Form</p>
+  </header>
+
+<div class="container-fluid maindiv">
+  <div class="row content">
+    <div class=" navb col-sm-6 sidenav">
+        <form id="myform" class="form-horizontal" >
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+              </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="website">Website:</label>
+              <div class="col-sm-10">
+                <input type="url" class="form-control" id="website" placeholder="Enter Website">
+              </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="image">Image:</label>
+                <div class="col-sm-10">
+                  <input type="url" class="form-control" id="image" placeholder="Please enter Image link">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="cb">Gender:</label>
+              <div class="radio  col-sm-10">
+                <label class="radio"><input type="radio" name="gender" value="Male" checked>Male</label>
+                <label class="radio"><input type="radio" name="gender" value="Female">Female</label>
+              </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="cb">Skills:</label>
+              <div class="checkbox  col-sm-10">
+                    <label class="checkbox-inline"><input type="checkbox" value="java">Java</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="html">HTML</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="css">CSS</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" onclick="addRow()"  class="btn btn-primary">Enroll Student</button>
+                <button type="reset" onclick="clear()"  class="btn btn-danger">Clear</button>
+              </div>
+            </div>
+          </form>
+    </div>
+    
+    <div class="col-sm-6">
+            <div>
+                
+            </div>
+            <div id="base" class="changing">
+              <div class=" panel panel-default panel-horizontal htmlpanel"> 
+                <div id="heading1" class="panel-body"><b>Description</b></div>
+                <div  id="heading2" class="panel-footer"><b>Image</b></div>
+              </div>
+             
+              <!-- <div id="changes" class="panel panel-default panel-horizontal">
+                <div id="description"class="panel-body">description</div>
+                <div class="panel-footer">
+                    <img src="..." class="img-fluid img-thumbnail" alt="Sheep">
+                </div> -->
+            </div> 
+            </div>
+               
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Copyright 2020-2021 by Fresher Training</p>
+</footer>
+
+<script src="Utils.js"></script>
+</body>
+</html>

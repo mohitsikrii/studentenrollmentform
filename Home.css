@@ -1,0 +1,102 @@
+
+.panel.panel-horizontal {
+    display:table;
+    width:100%;
+    margin: 0;
+}
+.panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
+    display:table-cell;
+}
+.panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-footer {
+    width: 25%;
+    border:0;
+    vertical-align: middle;
+}
+.panel.panel-horizontal > .panel-heading {
+    border-right: 1px solid #ddd;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+}
+.panel.panel-horizontal > .panel-footer {
+    border-left: 1px solid #ddd;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 4px;
+}
+      /* - */
+    .row.content {height: 550px}
+    .sidenav {
+      background-color: #ffff;
+      height: 100%;
+    }
+    footer {
+      background-color:#48d6ac;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      padding: 15px;
+    }
+    @media screen and (max-width: 767px) {
+      .sidenav {
+       
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+.form-horizontal{
+  position: relative;
+}
+.changing{
+ margin-top: 50px;
+  overflow-y: auto;
+  height: 412px;
+  width: 100%;
+  border-left: 3px solid #76c0a9;
+  
+}
+.header{
+  
+  width: 100%;
+  background-color: #47d7a9;
+  padding: 15px;
+  height: 50px;
+  color:white;
+  text-align: center;
+}
+.navb{
+  padding: 100px; 
+}
+.container-fluid{
+  height: fit-content;
+}
+.jsdiv{
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  width: 70% !important;
+  background-color:white !important;
+
+}
+.jsdiv > .panel-footer{
+  background-color: white  !important;
+}
+
+.htmlpanel{
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  width: 70% !important;
+  background-color: #a7c941 !important;
+  color:white !important;
+}
+.htmlpanel> .panel-footer{
+  background-color: #a7c941 !important;
+}
+.jsdiv2{
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  width: 70% !important;
+  background-color:#ebf2d3 !important;
+
+}
+.jsdiv2 > .panel-footer{
+  background-color: #ebf2d3  !important;
+}
+
+
